@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Todo App</title>
+  <style>
+    body { font-family: Arial; max-width: 500px; margin: 40px auto; padding: 20px; background: #f4f4f4; }
+    h1 { text-align: center; }
+    input { width: 70%; padding: 10px; }
+    button { padding: 10px 15px; background: #007bff; color: white; border: none; cursor: pointer; }
+    ul { list-style: none; padding: 0; }
+    li { background: white; margin: 10px 0; padding: 12px; display: flex; justify-content: space-between; border-radius: 6px; }
+    .delete { background: red; }
+  </style>
+</head>
+<body>
+  <h1>✅ My DevOps Todo App</h1>
+  <p style="text-align:center; color: #666;">Frontend → Backend → Postgres | Docker + AWS + CI/CD</p>
+  <div>
+    <input id="todoInput" placeholder="Add new task... e.g Deploy to EC2" />
+    <button onclick="addTodo()">Add</button>
+  </div>
+  <ul id="todoList"></ul>
+  <script src="app.js"></script>
+</body>
+</html>
